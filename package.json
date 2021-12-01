@@ -1,6 +1,6 @@
 {
   "name": "@arco-plugins/vite-plugin-svgr",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Vite plugin to transform SVGs into React components",
   "main": "lib/index.js",
   "scripts": {
