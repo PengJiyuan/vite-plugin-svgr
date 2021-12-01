@@ -8,7 +8,7 @@
     "build": "tsc",
     "prepublish": "npm run build"
   },
-  "repository": "pd4d10/vite-plugin-svgr",
+  "repository": "https://github.com/PengJiyuan/vite-plugin-svgr",
   "files": [
     "lib",
     "client.d.ts"
@@ -28,6 +28,6 @@
     "vite": "^2.6.0"
   },
   "dependencies": {
-    "@svgr/core": "^6.0.0-alpha.3"
+    "@svgr/core": "^6.0.0"
   }
 }

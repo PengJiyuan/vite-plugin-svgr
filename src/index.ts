@@ -23,7 +23,7 @@ export = function svgrPlugin(options: Options = {}): Plugin {
         }).then((res) => {
           return res.replace(
             'export default ReactComponent',
-            `export { ReactComponent }`
+            `export default ReactComponent;export { ReactComponent }`
           )
         })
 
