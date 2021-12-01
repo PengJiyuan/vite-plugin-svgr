@@ -12,7 +12,7 @@ export = function svgrPlugin(options: Options = {}): Plugin {
 
   return {
     name: 'vite:svgr',
-    async transform(code, id) {
+    async transform(_, id) {
       if (id.endsWith('.svg')) {
         const { transform: convert } = await import('@svgr/core')
 
@@ -28,7 +28,7 @@ export = function svgrPlugin(options: Options = {}): Plugin {
         })
 
         const res = await transformWithEsbuild(
-          componentCode + '\n' + code,
+          componentCode,
           id,
           { loader: 'jsx' }
         )
